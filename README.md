@@ -2,6 +2,8 @@
 
 NIAR One is a responsive productivity application for AI-assisted writing, study organization, browser-based data analysis, and everyday utilities.
 
+![NIAR One homepage](./public/niar-one-homepage.png)
+
 ## Stack
 
 - Next.js 16 App Router, React 19, TypeScript, Tailwind CSS 4
