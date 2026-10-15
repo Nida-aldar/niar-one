@@ -101,4 +101,8 @@ npm.cmd audit
 
 ## Production
 
-Configure the Neon integration (or set its PostgreSQL `DATABASE_URL` environment variable), a strong `SESSION_SECRET`, HTTPS `APP_URL`, and any required AI/SMTP credentials in Vercel. Apply committed migrations with `npx.cmd prisma migrate deploy` against the database's direct connection URL, then build and deploy. Review the limitations above before exposing the app publicly.
+Configure the Neon integration (including its direct `DATABASE_POSTGRES_URL_NON_POOLING`
+connection variable), a strong `SESSION_SECRET`, HTTPS `APP_URL`, and any required
+AI/SMTP credentials in Vercel. Vercel's configured build command runs the committed
+Prisma migrations against the direct database connection before building the app.
+Review the limitations above before exposing the app publicly.
